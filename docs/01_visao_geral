@@ -1,0 +1,13 @@
+# Visão Geral
+
+Este projeto simula um sistema Open Sea para monitoramento de motores de navio, coletando telemetria e exibindo dashboards na nuvem.
+
+## Variáveis monitoradas (por motor)
+- Temperatura (°C)
+- Vibração RMS (mm/s)
+- RPM
+- Pressão do óleo (bar)
+
+## Indicadores derivados (edge)
+- health_score (0–100)
+- anomaly_flag (0/1)
