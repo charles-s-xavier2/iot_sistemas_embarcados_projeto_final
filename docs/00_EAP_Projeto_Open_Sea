@@ -1,0 +1,173 @@
+# EAP – Projeto Final IoT & Sistemas Embarcados  
+## Caso de Uso: Open Sea – Monitoramento de Motores de Navio (Simulado)
+
+Esta Estrutura Analítica do Projeto (EAP) descreve todas as atividades necessárias para o planejamento, implementação, documentação e entrega do Projeto Final do curso de IoT & Sistemas Embarcados.
+
+---
+
+## 1. Iniciação e Planejamento
+### 1.1 Definição do Escopo
+- 1.1.1 Escolha do caso de uso (Open Sea – Motores de Navio)
+- 1.1.2 Definição dos objetivos do sistema
+- 1.1.3 Mapeamento dos requisitos do curso (≥80%)
+
+### 1.2 Organização do Projeto
+- 1.2.1 Definição da arquitetura de referência
+- 1.2.2 Criação da estrutura do repositório GitHub
+- 1.2.3 Definição do padrão de documentação
+- 1.2.4 Definição de papéis e responsabilidades do grupo
+
+---
+
+## 2. Arquitetura do Sistema
+### 2.1 Modelagem Arquitetural
+- 2.1.1 Definição dos componentes Edge, Comunicação e Cloud
+- 2.1.2 Definição do fluxo de dados
+- 2.1.3 Definição dos tópicos MQTT
+- 2.1.4 Definição do payload JSON
+
+### 2.2 Representação Visual
+- 2.2.1 Criação do diagrama de arquitetura
+- 2.2.2 Revisão do diagrama com o grupo
+- 2.2.3 Inclusão do diagrama no repositório
+
+---
+
+## 3. Implementação do Edge (Simulação)
+### 3.1 Ambiente de Simulação
+- 3.1.1 Configuração do projeto no Wokwi
+- 3.1.2 Seleção do ESP32
+- 3.1.3 Configuração do ambiente de desenvolvimento
+
+### 3.2 Sensores Simulados
+- 3.2.1 Simulação de temperatura do motor
+- 3.2.2 Simulação de vibração do motor
+- 3.2.3 Simulação de RPM
+- 3.2.4 Simulação de pressão do óleo (opcional)
+
+### 3.3 Lógica de Edge Computing
+- 3.3.1 Implementação de thresholds
+- 3.3.2 Cálculo do health_score
+- 3.3.3 Geração do anomaly_flag
+- 3.3.4 Organização dos dados para envio
+
+---
+
+## 4. Comunicação (MQTT)
+### 4.1 Configuração do Broker
+- 4.1.1 Seleção do broker MQTT público
+- 4.1.2 Configuração de host, porta e tópicos
+
+### 4.2 Publicação de Dados
+- 4.2.1 Implementação do cliente MQTT no ESP32
+- 4.2.2 Serialização dos dados em JSON
+- 4.2.3 Publicação periódica da telemetria
+- 4.2.4 Testes de envio e recebimento
+
+---
+
+## 5. Cloud Computing e Integrações
+### 5.1 Plataforma Principal (Ubidots)
+- 5.1.1 Criação da conta/projeto
+- 5.1.2 Configuração das variáveis
+- 5.1.3 Integração MQTT com Ubidots
+- 5.1.4 Validação da ingestão de dados
+
+### 5.2 Plataforma Secundária (ThingSpeak)
+- 5.2.1 Criação do canal
+- 5.2.2 Mapeamento das variáveis
+- 5.2.3 Integração MQTT / HTTP
+- 5.2.4 Validação da visualização
+
+---
+
+## 6. Dashboards e Análise de Dados
+### 6.1 Dashboards Operacionais
+- 6.1.1 Gráfico de temperatura por motor
+- 6.1.2 Gráfico de vibração por motor
+- 6.1.3 Gráfico de RPM
+- 6.1.4 Indicador de health_score
+- 6.1.5 Indicador de anomaly_flag
+
+### 6.2 Interpretação dos Dados
+- 6.2.1 Análise de comportamento normal
+- 6.2.2 Análise de cenários de falha simulada
+- 6.2.3 Registro das conclusões
+
+---
+
+## 7. Segurança
+### 7.1 Segurança da Comunicação
+- 7.1.1 Uso de tokens de API
+- 7.1.2 Organização e segregação de tópicos MQTT
+
+### 7.2 Boas Práticas
+- 7.2.1 Não versionamento de segredos
+- 7.2.2 Documentação das medidas de segurança
+- 7.2.3 Discussão conceitual sobre TLS e autenticação
+
+---
+
+## 8. Testes e Validação
+### 8.1 Testes Funcionais
+- 8.1.1 Teste da simulação de sensores
+- 8.1.2 Teste de envio MQTT
+- 8.1.3 Teste de ingestão na cloud
+
+### 8.2 Testes de Cenário
+- 8.2.1 Operação normal
+- 8.2.2 Situação de estresse
+- 8.2.3 Falha simulada do motor
+
+---
+
+## 9. Documentação
+### 9.1 Documentação Técnica
+- 9.1.1 Visão geral do sistema
+- 9.1.2 Arquitetura
+- 9.1.3 Setup e execução
+- 9.1.4 Segurança
+- 9.1.5 Testes e validação
+
+### 9.2 Organização no GitHub
+- 9.2.1 Revisão dos arquivos Markdown
+- 9.2.2 Revisão de links e imagens
+- 9.2.3 Revisão final do README
+
+---
+
+## 10. Vídeo Demonstrativo
+### 10.1 Roteiro
+- 10.1.1 Introdução e contexto
+- 10.1.2 Arquitetura do sistema
+- 10.1.3 Simulação no Wokwi
+- 10.1.4 Dashboards em tempo real
+- 10.1.5 Conclusão
+
+### 10.2 Gravação
+- 10.2.1 Captura de tela
+- 10.2.2 Narração
+- 10.2.3 Publicação do vídeo
+- 10.2.4 Inserção do link no GitHub
+
+---
+
+## 11. Apresentação Final
+### 11.1 Preparação dos Slides
+- 11.1.1 Problema e contexto
+- 11.1.2 Arquitetura
+- 11.1.3 Implementação
+- 11.1.4 Resultados
+- 11.1.5 Lições aprendidas
+
+### 11.2 Revisão Final
+- 11.2.1 Revisão técnica
+- 11.2.2 Revisão de narrativa
+- 11.2.3 Ajustes finais para entrega
+
+---
+
+## 12. Entrega
+- 12.1 Verificação dos requisitos do curso
+- 12.2 Conferência dos links no GitHub
+- 12.3 Entrega oficial do projeto
