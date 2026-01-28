@@ -1,0 +1,15 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets
+.env
+*.secret
+*token*
+*apikey*
+
+# Build artifacts
+*.log
+*.tmp
