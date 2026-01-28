@@ -1,0 +1,29 @@
+# Projeto Final — IoT & Sistemas Embarcados (Open Sea)
+
+Sistema IoT integrado (simulado) para **monitoramento de motores de navio** no contexto do Open Sea.
+
+## Visão geral
+- **Edge (Simulado):** ESP32 no Wokwi gerando telemetria (temperatura, vibração, RPM, pressão do óleo)
+- **Comunicação:** MQTT (broker público)
+- **Cloud:** Ubidots (dashboard principal) + ThingSpeak (visualização secundária)
+- **Segurança:** tokens de API + boas práticas documentadas
+
+## Estrutura do repositório
+- `firmware/` — código do ESP32 (Wokwi)
+- `arquitetura/` — diagrama e descrição da arquitetura
+- `dashboards/` — links e instruções (Ubidots/ThingSpeak)
+- `docs/` — documentação completa (setup, segurança, testes)
+- `slides/` — apresentação final
+- `video/` — link do vídeo demonstrativo
+
+## Links (preencher)
+- Wokwi: (link)
+- Broker MQTT: (host/porta)
+- Ubidots: (link do dashboard)
+- ThingSpeak: (link do canal)
+- Vídeo: (link)
+
+## Como executar (resumo)
+1. Abrir o projeto no Wokwi e iniciar simulação
+2. Confirmar publicação MQTT e telemetria JSON
+3. Validar dashboards recebendo dados em tempo real
