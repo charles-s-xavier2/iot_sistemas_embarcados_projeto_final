@@ -1,0 +1,6 @@
+#ifndef SECRETS_H
+#define SECRETS_H
+
+const char* UBIDOTS_TOKEN = "BBUS-Z5TR8RRzCQ1ORUBmMLYS52BSdTFIYP";
+
+#endif
