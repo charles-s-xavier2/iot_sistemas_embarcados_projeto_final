@@ -28,6 +28,9 @@ A arquitetura do projeto segue o modelo IoT:
 
 O ESP32 atua como device de borda, realizando processamento local antes do envio dos dados para a nuvem.
 
+<p align="center">
+  <img src="assets/Diagrama - Projeto Final.png" alt="Arquitetura do Sistema IoT" width="800">
+</p>
 
 ---
 
