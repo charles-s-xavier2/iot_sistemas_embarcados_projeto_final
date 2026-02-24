@@ -1,29 +1,86 @@
-# Projeto Final — IoT & Sistemas Embarcados (Open Sea)
+]# 🌊 Sistema IoT para Monitoramento de Motores Navais
 
-Sistema IoT integrado (simulado) para **monitoramento de motores de navio** no contexto do Open Sea.
+Projeto desenvolvido para a disciplina **Sistemas Eletrônicos Embarcados**, com foco em Internet das Coisas (IoT), edge computing e comunicação em nuvem.
 
-## Visão geral
-- **Edge (Simulado):** ESP32 no Wokwi gerando telemetria (temperatura, vibração, RPM, pressão do óleo)
-- **Comunicação:** MQTT (broker público)
-- **Cloud:** Ubidots (dashboard principal) + ThingSpeak (visualização secundária)
-- **Segurança:** tokens de API + boas práticas documentadas
+---
 
-## Estrutura do repositório
-- `firmware/` — código do ESP32 (Wokwi)
-- `arquitetura/` — diagrama e descrição da arquitetura
-- `dashboards/` — links e instruções (Ubidots/ThingSpeak)
-- `docs/` — documentação completa (setup, segurança, testes)
-- `slides/` — apresentação final
-- `video/` — link do vídeo demonstrativo
+##  Visão Geral
+Este projeto simula um cenário real de operações em alto-mar (Open Sea), onde motores navais são monitorados continuamente por sensores embarcados.
 
-## Links (preencher)
-- Wokwi: (link)
-- Broker MQTT: (host/porta)
-- Ubidots: (link do dashboard)
-- ThingSpeak: (link do canal)
-- Vídeo: (link)
+Os dados são coletados por um **ESP32** (simulado no Wokwi), processados localmente no edge device e enviados via **MQTT** para a nuvem, onde são analisados e visualizados em dashboards.
 
-## Como executar (resumo)
-1. Abrir o projeto no Wokwi e iniciar simulação
-2. Confirmar publicação MQTT e telemetria JSON
-3. Validar dashboards recebendo dados em tempo real
+---
+
+## 🎯 Objetivos
+- Simular um sistema IoT aplicado a motores navais  
+- Coletar dados operacionais de sensores  
+- Realizar pré-processamento no edge device  
+- Calcular health score e detectar anomalias  
+- Enviar dados para a nuvem via MQTT  
+- Visualizar informações em dashboards  
+
+---
+
+## 🏗️ Arquitetura do Sistema
+A arquitetura do projeto segue o modelo IoT:
+
+**Sensores → ESP32 (Edge) → MQTT → Cloud → Dashboards**
+
+O ESP32 atua como device de borda, realizando processamento local antes do envio dos dados para a nuvem.
+
+
+---
+
+## 🔌 Edge Device
+- Microcontrolador: **ESP32**
+- Ambiente: **Simulação no Wokwi**
+- Funções:
+  - Coleta de dados simulados
+  - Processamento local (edge intelligence)
+  - Envio de dados via MQTT
+
+---
+
+## 📡 Comunicação
+- Protocolo: **MQTT**
+- Broker: Público
+- Mensagens em formato **JSON**
+- Comunicação assíncrona e leve, adequada para IoT
+
+---
+
+## ☁️ Cloud e Dashboards
+- **Ubidots**: plataforma principal para análise e dashboards  
+- **ThingSpeak**: visualização complementar  
+
+Os dashboards exibem dados operacionais, health score e indicadores de anomalia.
+
+---
+
+## 🧪 Testes
+- Simulação completa no Wokwi  
+- Testes de conexão Wi-Fi  
+- Testes de comunicação MQTT  
+- Validação dos cenários:
+  - Normal
+  - Stress
+  - Falha  
+
+---
+
+## ⚠️ Limitações
+- Projeto baseado em simulação  
+- Sensores não físicos  
+- Segurança em nível básico  
+- Sem integração com sistemas reais de bordo  
+- Limitação no número de variáveis dos dashboards devido ao plano gratuito do Ubidots  
+
+---
+## ▶️ Simulação no Wokwi
+
+O projeto pode ser executado diretamente no simulador online.
+
+🔗 Link da simulação:
+https://wokwi.com/projects/456859402399136769
+---
+
