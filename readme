@@ -1,4 +1,4 @@
-]# 🌊 Sistema IoT para Monitoramento de Motores Navais
+# 🌊 Sistema IoT para Monitoramento de Motores Navais
 
 Projeto desenvolvido para a disciplina **Sistemas Eletrônicos Embarcados**, com foco em Internet das Coisas (IoT), edge computing e comunicação em nuvem.
 
@@ -21,12 +21,11 @@ Os dados são coletados por um **ESP32** (simulado no Wokwi), processados localm
 
 ---
 
-## 🏗️ Arquitetura do Sistema
+## Arquitetura do Sistema
+
 A arquitetura do projeto segue o modelo IoT:
 
 **Sensores → ESP32 (Edge) → MQTT → Cloud → Dashboards**
-
-O ESP32 atua como device de borda, realizando processamento local antes do envio dos dados para a nuvem.
 
 <p align="center">
   <img src="assets/Diagrama - Projeto Final.png" alt="Arquitetura do Sistema IoT" width="800">
@@ -60,7 +59,7 @@ Os dashboards exibem dados operacionais, health score e indicadores de anomalia.
 
 ---
 
-## 🧪 Testes
+##  Testes
 - Simulação completa no Wokwi  
 - Testes de conexão Wi-Fi  
 - Testes de comunicação MQTT  
