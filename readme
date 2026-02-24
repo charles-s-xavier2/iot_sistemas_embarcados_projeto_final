@@ -28,7 +28,7 @@ A arquitetura do projeto segue o modelo IoT:
 **Sensores → ESP32 (Edge) → MQTT → Cloud → Dashboards**
 
 <p align="center">
-  <img src="arquitetura/Diagrama - Projeto Final.png" alt="Arquitetura do Sistema IoT" width="800">
+<img src="arquitetura/Diagrama - Projeto Final.png" alt="Arquitetura do Sistema IoT" width="800">
 </p>
 
 ---
