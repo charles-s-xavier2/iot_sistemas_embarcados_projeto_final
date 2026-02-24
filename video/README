@@ -1,1 +1,12 @@
+## 🎥 Vídeo de Demonstração
 
+Devido ao tamanho do arquivo, o vídeo de demonstração do projeto está disponível no Google Drive.
+
+🔗 **Acesse o vídeo aqui:**  
+https://drive.google.com/drive/folders/11ZHtT32oBLF2NvIBtJMhSvjmrGdP_tnC?usp=sharing
+
+O vídeo apresenta:
+- Execução da simulação no Wokwi
+- Funcionamento do firmware no ESP32
+- Comunicação MQTT
+- Visualização dos dados nos dashboards
