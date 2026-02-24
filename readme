@@ -20,8 +20,13 @@ Os dados são coletados por um **ESP32** (simulado no Wokwi), processados localm
 - Visualizar informações em dashboards  
 
 ---
+## Arquitetura do Sistema
 
-![Arquitetura do Sistema IoT](arquitetura/Diagrama - Projeto Final.png)
+A arquitetura do projeto segue o modelo IoT clássico, no qual os dados são coletados no edge device, processados localmente e enviados para a nuvem para análise e visualização.
+
+**Sensores → ESP32 (Edge) → MQTT → Cloud → Dashboards**
+- A imagem apresenta o diagrama da arquitetura do projeto, localizada na pasta `arquitetura/` do repositório.
+
 
 ---
 
